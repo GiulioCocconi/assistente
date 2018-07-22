@@ -18,7 +18,7 @@ function error (message) {
 
 const helpEmbed = {
   'title': 'About & Commands',
-  'description': ‘ASSISTENTE DEL SERVER MINECRAFT’,
+  'description': 'ASSISTENTE DEL SERVER MINECRAFT',
   'color': 2456945,
   'timestamp': moment().format(),
   'footer': {
