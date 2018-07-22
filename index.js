@@ -1,11 +1,6 @@
-
 //req
 const Discord = require('discord.js')
-const fs = require('fs') //parrot
-const http = require('http') //parrot
-const unzip = require('unzip') //parrot
-const rimraf = require('rimraf') //parrot
-const moment = require('moment') //parrot
+const Tatsumaki = require('tatsumaki.js')//heroku
 
 //Discord Client
 const client = new Discord.Client()
@@ -20,6 +15,6 @@ client.on('ready', () => {
 }
 
 //login al bot, da mettere alla fine
-  client.login(process.env.TOKEN)
+client.login(process.env.TOKEN)
 
 
