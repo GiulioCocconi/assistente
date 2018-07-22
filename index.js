@@ -1,3 +1,7 @@
+//now
+require('http').createServer().listen(3000)
+
+//req
 const Discord = require('discord.js')
 const fs = require('fs') //parrot
 const http = require('http') //parrot
@@ -5,8 +9,8 @@ const unzip = require('unzip') //parrot
 const rimraf = require('rimraf') //parrot
 const moment = require('moment') //parrot
 
+//Discord Client
 const client = new Discord.Client()
-client.login(process.env.BOT_TOKEN)
 
 //parrot
 
@@ -160,9 +164,9 @@ function uploadEmojis(message) {
 if (fs.existsSync(__dirname + '/parrots/')) {
   rimraf.sync(__dirname + '/parrots/')
   download()
-  client.login(process.env.BOT_TOKEN)
+  client.login(process.env.TOKEN)
 } else {
   download()
-  client.login(process.env.BOT_TOKEN)
+  client.login(process.env.TOKEN)
 }
 //fine parrot
