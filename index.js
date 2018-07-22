@@ -26,9 +26,8 @@ client.on('ready', () => {
 client.on('message', message => {
 //dado
     if (message.content === prefix + 'dado') {
-     message.reply("dado run!!!!");
        var dadoImage //url immagine dado
-       var message = 'Ho tirato il dado ed è uscito questo numero:'
+       var messaggio = 'Ho tirato il dado ed è uscito questo numero:'
        var dado = Math.floor(Math.random() * 6) + 1; //valore del dado
 
        if (dado === 1) {
@@ -55,7 +54,7 @@ client.on('message', message => {
           dadoImage = 'http://ilserverdiminecraft.altervista.org/Server/Bot/Comandi/Dadi/6.png'
       }
 
-     message.reply("dado run!!!!");
+     message.reply(dadoImage + messaggio + dado);
     }
   }
 );
