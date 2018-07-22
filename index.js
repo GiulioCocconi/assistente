@@ -42,7 +42,7 @@ client.on('message', message => {
     }
 
     }
-  }
-});
+  });
+
 //login al bot, da mettere alla fine
 client.login(process.env.TOKEN)
