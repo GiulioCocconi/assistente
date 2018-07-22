@@ -1,8 +1,11 @@
 //req
-const Discord = require('discord.js')
+const Discord = require('discord.js');
 
 //Discord Client
-const client = new Discord.Client()
+const client = new Discord.Client();
+
+//prefisso
+let prefix = "!a"
 
 function error (message) {
   console.log(message)
@@ -15,5 +18,3 @@ client.on('ready', () => {
 
 //login al bot, da mettere alla fine
 client.login(process.env.TOKEN)
-
-
