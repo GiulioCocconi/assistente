@@ -52,15 +52,11 @@ client.on('message', message => {
 
        if (dado === 6) {
           dadoImage = 'http://ilserverdiminecraft.altervista.org/Server/Bot/Comandi/Dadi/6.png'
-       }
-
-  
-
-           
-
-       message.reply(dadoImage + '/n' + message + dado)
       }
-   }
+      message.reply(dadoImage + '/n' + message + dado);
+
+    }
+  }
 );
 //login al bot, da mettere alla fine
 client.login(process.env.TOKEN)
