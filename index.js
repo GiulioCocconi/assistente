@@ -26,6 +26,7 @@ client.on('ready', () => {
 client.on('message', message => {
 //dado
     if (message.content === prefix + 'dado') {
+     message.reply("dado run!!!!");
        var dadoImage //url immagine dado
        var message = 'Ho tirato il dado ed è uscito questo numero:'
        var dado = Math.floor(Math.random() * 6) + 1; //valore del dado
