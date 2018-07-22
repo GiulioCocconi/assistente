@@ -6,6 +6,7 @@ const rimraf = require('rimraf') //parrot
 const moment = require('moment') //parrot
 
 const client = new Discord.Client()
+client.login(process.env.BOT_TOKEN)
 
 //parrot
 
