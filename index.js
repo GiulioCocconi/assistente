@@ -55,7 +55,7 @@ client.on('message', message => {
       }
 
 
-     message.channel.send(dadoImage + '/n' + message + dado);
+     message.channel.send(dadoImage + '/n' + message + dado)
 
     }
   }
