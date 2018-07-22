@@ -1,0 +1,22 @@
+{
+  "name": "Assistente",
+  "version": "1.0.0",
+  "description": "Un assistente per il mio server",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard",
+    "start": "node index.js",
+    "standard-fix": "standard --fix"
+  },
+  "author": "Giulio Cocconi",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.3.0",
+    "moment": "^2.20.1",
+    "rimraf": "^2.6.2",
+    "unzip": "^0.1.11"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3"
+  }
+}
