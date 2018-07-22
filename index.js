@@ -1,5 +1,3 @@
-//now
-require('http').createServer().listen(3000)
 
 //req
 const Discord = require('discord.js')
