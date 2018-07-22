@@ -54,11 +54,10 @@ client.on('message', message => {
           dadoImage = 'http://ilserverdiminecraft.altervista.org/Server/Bot/Comandi/Dadi/6.png'
       }
 
-
-     message.channel.send(dadoImage + '/n' + message + dado)
-
+     client.reply(message, dadoImage + '/n' + message + dado);
     }
   }
 );
+
 //login al bot, da mettere alla fine
 client.login(process.env.TOKEN)
