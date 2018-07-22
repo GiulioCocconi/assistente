@@ -54,7 +54,7 @@ client.on('message', message => {
           dadoImage = 'http://ilserverdiminecraft.altervista.org/Server/Bot/Comandi/Dadi/6.png'
       }
 
-     client.reply(message, dadoImage + '/n' + message + dado);
+     message.reply("dado run!!!!");
     }
   }
 );
