@@ -12,7 +12,7 @@ function error (message) {
 client.on('ready', () => {
   console.log('Il bot è pronto')
   client.user.setGame('gestire il server')
-}
+})
 
 //login al bot, da mettere alla fine
 client.login(process.env.TOKEN)
