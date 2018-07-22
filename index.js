@@ -15,7 +15,7 @@ function error (message) {
 
 client.on('ready', () => {
   console.log('Il bot è pronto')
-  client.user.setGame('gestire il server')
+  client.user.setActivity('gestire il server')
 })
 
 
@@ -26,35 +26,13 @@ client.on('ready', () => {
 client.on('message', message => {
 //dado
     if (message.content === prefix + 'dado') {
-       var dadoImage //url immagine dado
-       var messaggio = 'Ho tirato il dado ed è uscito questo numero:'
        var dado = Math.floor(Math.random() * 6) + 1; //valore del dado
-
-       if (dado === 1) {
-          dadoImage = 'http://ilserverdiminecraft.altervista.org/Server/Bot/Comandi/Dadi/1.png'
-       }
-
-       if (dado === 2) {
-          dadoImage = 'http://ilserverdiminecraft.altervista.org/Server/Bot/Comandi/Dadi/2.png'
-       }
-
-       if (dado === 3) {
-          dadoImage = 'http://ilserverdiminecraft.altervista.org/Server/Bot/Comandi/Dadi/3.png'
-       }
-
-       if (dado === 4) {
-          dadoImage = 'http://ilserverdiminecraft.altervista.org/Server/Bot/Comandi/Dadi/4.png'
-       }
-
-       if (dado === 5) {
-          dadoImage = 'http://ilserverdiminecraft.altervista.org/Server/Bot/Comandi/Dadi/5.png'
-       }
-
-       if (dado === 6) {
-          dadoImage = 'http://ilserverdiminecraft.altervista.org/Server/Bot/Comandi/Dadi/6.png'
-      }
-
-     message.reply(messaggio + dado, {file: dadoImage});
+       var dadoImage = 'http://ilserverdiminecraft.altervista.org/Server/Bot/Comandi/Dadi/' + dado + '.png'
+        //url immagine dado
+       var messaggio = 'Ho tirato il dado ed è uscito questo numero:' 
+       
+      
+       message.reply(messaggio + ' ' + '*' dado + '*', {file: dadoImage});
     }
   }
 );
