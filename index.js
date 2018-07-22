@@ -33,7 +33,7 @@ client.on('ready', () => {
     }
 
   //comando
-  if (message.content === prefix  'comando') {
+  if (message.content === prefix + 'comando') {
 
   //cosa fare
 
