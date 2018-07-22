@@ -21,24 +21,27 @@ client.on('ready', () => {
 
 
 //quando si  manda un messaggio
+ client.on('message', message => {
 
+ //dado
+  if (message.content === prefix + ' ' + 'dado') {
+    var dado = Math.floor(Math.random() * 6)  1; //valore del dado
+    var dadoImage = 'http://ilserverdiminecraft.altervista.org/Server/Bot/Comandi/Dadi/' + dado + '.png' //url immagine dado
 
-client.on('message', message => {
+    var messaggio = 'Ho tirato il dado ed è uscito questo numero:' 
+    message.reply(messaggio  ' '  dado, {file: dadoImage});
 
-  if (message.toLowerCase().startsWith(PREFIX.toLowerCase())) {			
-    const comando = message.substring(PREFIX.length).split(/[ \n]/)[0].toLowerCase().trim();
-    const suffisso = message.substring(PREFIX.length + command.length).trim();
-
-    switch (comando) {
-      case 'dado':
-        var dado = Math.floor(Math.random() * 6) + 1; //valore del dado
-        var dadoImage = 'http://ilserverdiminecraft.altervista.org/Server/Bot/Comandi/Dadi/' + dado + '.png'
-        //url immagine dado
-       var messaggio = 'Ho tirato il dado ed è uscito questo numero:' 
-       message.reply(messaggio + ' ' + dado, {file: dadoImage});
     }
+
+  //comando
+  if (message.content === prefix  'comando') {
+
+  //cosa fare
+
   }
+
 });
+
 
 //login al bot, da mettere alla fine
 client.login(process.env.TOKEN)
