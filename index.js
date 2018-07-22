@@ -26,10 +26,9 @@ client.on('ready', () => {
  //dado
   if (message.content === prefix + ' ' + 'dado') {
     var dado = Math.floor(Math.random() * 6)  1; //valore del dado
-    var dadoImage = 'http://ilserverdiminecraft.altervista.org/Server/Bot/Comandi/Dadi/' + dado + '.png' //url immagine dado
-
+    var dadoImage = 'http://ilserverdiminecraft.altervista.org/Server/Bot/Comandi/Dadi/' + dado + '.png'  //url immagine dado
     var messaggio = 'Ho tirato il dado ed è uscito questo numero:' 
-    message.reply(messaggio  ' '  dado, {file: dadoImage});
+    message.reply(messaggio + ' ' + dado, {file: dadoImage});
 
     }
 
