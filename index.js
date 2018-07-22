@@ -1,6 +1,5 @@
 //req
 const Discord = require('discord.js')
-const Tatsumaki = require('tatsumaki.js')//heroku
 
 //Discord Client
 const client = new Discord.Client()
