@@ -1,8 +1,5 @@
 //req
 const Discord = require('discord.js');
-const music = require('discord.js-music-v11'); //musica
-const YoutubeDL = require('youtube-dl'); //musica
-
 
 //Discord Client
 const client = new Discord.Client();
@@ -40,9 +37,8 @@ client.on('message', message => {
        var messaggio = 'Ho tirato il dado ed è uscito questo numero:' 
        message.reply(messaggio + ' ' + dado, {file: dadoImage});
     }
-
-    }
-  });
+  }
+});
 
 //login al bot, da mettere alla fine
 client.login(process.env.TOKEN)
