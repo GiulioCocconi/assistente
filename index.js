@@ -5,7 +5,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 //prefisso
-let prefix = "!a"
+var prefix = "!"
 
 function error (message) {
   console.log(message)
@@ -22,9 +22,13 @@ client.on('ready', () => {
 
 //quando si  manda un messaggio
  client.on('message', message => {
-
+ let messaggioArray = message.content.split(' ');
+ let comando = messaggioArray[0];
+ let arg = messaggioArray.slice(1)
+ 
+ 
  //dado
-  if (message.content === prefix + ' ' + 'dado') {
+  if (comando === prefix + 'dado') {
     var dado = Math.floor(Math.random() * 6) + 1; //valore del dado
     var dadoImage = 'http://ilserverdiminecraft.altervista.org/Server/Bot/Comandi/Dadi/' + dado + '.png'  //url immagine dado
     var messaggio = 'Ho tirato il dado ed è uscito questo numero:' 
@@ -33,7 +37,7 @@ client.on('ready', () => {
     }
 
   //comando
-  if (message.content === prefix + 'comando') {
+  if (comando === prefix + 'comando') {
 
   //cosa fare
 
