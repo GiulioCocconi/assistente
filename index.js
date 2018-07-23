@@ -22,19 +22,42 @@ client.on('ready', () => {
 
 //quando si  manda un messaggio
  client.on('message', message => {
- let messaggioArray = message.content.split(' ');
- let comando = messaggioArray[0];
- let arg = messaggioArray.slice(1)
+   if (message.content.startsWith(prefix)) {
+     let messaggioArray = message.content.split(' ');
+     let comando = messaggioArray[0];
+     let arg = messaggioArray.slice(1)
+     
+     //dado
+     if (comando === prefix + 'dado') {
+       var dado = Math.floor(Math.random() * 6) + 1; //valore del dado
+       var dadoImage = 'http://ilserverdiminecraft.altervista.org/Server/Bot/Comandi/Dadi/' + dado + '.png'  //url immagine dadovar messaggio = 'Ho tirato il dado ed è uscito questo numero:' 
+       message.reply(messaggio + ' ' + dado, {file: dadoImage});
+     }
+     //comando
+     if (comando === prefix + 'comando') {
+
+    //cosa fare
+    }
+     
+   }
+  });
+
+
+
+
+     
+
+     
  
  
  //dado
   if (comando === prefix + 'dado') {
-    var dado = Math.floor(Math.random() * 6) + 1; //valore del dado
-    var dadoImage = 'http://ilserverdiminecraft.altervista.org/Server/Bot/Comandi/Dadi/' + dado + '.png'  //url immagine dado
-    var messaggio = 'Ho tirato il dado ed è uscito questo numero:' 
-    message.reply(messaggio + ' ' + dado, {file: dadoImage});
+var dado = Math.floor(Math.random() * 6) + 1; //valore del dado
+var dadoImage = 'http://ilserverdiminecraft.altervista.org/Server/Bot/Comandi/Dadi/' + dado + '.png'  //url immagine dado
+var messaggio = 'Ho tirato il dado ed è uscito questo numero:' 
+message.reply(messaggio + ' ' + dado, {file: dadoImage});
 
-    }
+}
 
   //comando
   if (comando === prefix + 'comando') {
