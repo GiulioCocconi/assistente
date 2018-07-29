@@ -35,8 +35,18 @@ client.on('ready', () => {
      }
      //comando
      if (comando === prefix + 'comando') {
-
-    //cosa fare
+       let search
+       let b 
+       For (var a=0; arg[a] = ''; a++){
+           if (a=0){
+              search=arg[0]
+              b=search
+           }
+           else {
+              search=b + ’+’ + arg[a]
+             b=search
+           }
+       }
     }
      
    }
