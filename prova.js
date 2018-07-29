@@ -11,7 +11,7 @@ function error (message) {
   console.log(message)
 }
 var prefix = '!'
-var messaggio= '!comando hello'
+var messaggio= '!comando Italy'
      let messaggioArray =messaggio.content.split(' ');
      let comando = messaggioArray[0];
      let arg = messaggioArray.slice(1)
@@ -31,10 +31,12 @@ var messaggio= '!comando hello'
            if (a=1){
               search = messaggioArray.slice(a)
               b = search
+             console.log(search)
            }
            else {
               search = b +'+'+ messaggioArray.slice(a)
               b = search
+             console.log(search)
            }
        }
     }
