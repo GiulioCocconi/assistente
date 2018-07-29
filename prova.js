@@ -40,9 +40,6 @@ var messaggio= '!comando Italy'
            }
        }
     }
-     
-   }
-  });
 
 //login al bot, da mettere alla fine
 client.login(process.env.TOKEN)
