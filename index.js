@@ -38,7 +38,7 @@ client.on('ready', () => {
        let search
        let b 
        var a
-       For (a=0; arg[a] = ''; a++){
+       for (a=0; arg[a] = ''; a++){
            if (a=0){
               search=arg[0]
               b=search
