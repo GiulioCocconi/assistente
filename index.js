@@ -44,7 +44,7 @@ client.on('ready', () => {
               b = search
            }
            else {
-              search = b + ’+’ + arg[a]
+              search = b +'+'+ arg[a]
               b = search
            }
        }
