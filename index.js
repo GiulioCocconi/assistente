@@ -38,13 +38,13 @@ client.on('ready', () => {
        let search
        let b 
        var a
-       for (a=0; arg[a] = ''; a++){
-           if (a=0){
-              search = arg[0]
+       for (a=1; messaggioArray.slice(a) = ''; a++){
+           if (a=1){
+              search = messaggioArray.slice(a)
               b = search
            }
            else {
-              search = b +'+'+ arg[a]
+              search = b +'+'+ messaggioArray.slice(a)
               b = search
            }
        }
