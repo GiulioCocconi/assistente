@@ -37,7 +37,8 @@ client.on('ready', () => {
      if (comando === prefix + 'comando') {
        let search
        let b 
-       For (var a=0; arg[a] = ''; a++){
+       var a
+       For (a=0; arg[a] = ''; a++){
            if (a=0){
               search=arg[0]
               b=search
