@@ -40,12 +40,12 @@ client.on('ready', () => {
        var a
        for (a=0; arg[a] = ''; a++){
            if (a=0){
-              search=arg[0]
-              b=search
+              search = arg[0]
+              b = search
            }
            else {
-              search=b + ’+’ + arg[a]
-             b=search
+              search = b + ’+’ + arg[a]
+              b = search
            }
        }
     }
