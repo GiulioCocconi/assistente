@@ -75,7 +75,7 @@ client.on('ready', () => {
 
      //wolfram API
 
-     if (comando === prefix +  wolfram’) {
+     if (comando === prefix +  'wolfram') {
 
        var search
 
