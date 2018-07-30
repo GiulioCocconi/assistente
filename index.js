@@ -106,7 +106,7 @@ client.on('ready', () => {
        }
 
        var wolframLink = 'http://api.wolframalpha.com/v1/simple?i=' + search + '&appid=' + process.env.APPID_WOLFRAM + '&background=282b30&foreground=white'
-       message.reply('Ho cercato quello che mi hai chiesto su Wolfram Alpha: /n", {file: wolframLink});
+       message.reply('Ho cercato quello che mi hai chiesto su Wolfram Alpha: /n', {file: wolframLink});
 
 
 
