@@ -30,7 +30,8 @@ client.on('ready', () => {
      //dado
      if (comando === prefix + 'dado') {
        let dado = Math.floor(Math.random() * 6) + 1; //valore del dado
-       let dadoImage = 'http://ilserverdiminecraft.altervista.org/Server/Bot/Comandi/Dadi/' + dado + '.png'  //url immagine dadovar messaggio = 'Ho tirato il dado ed è uscito questo numero:' 
+       let dadoImage = 'http://ilserverdiminecraft.altervista.org/Server/Bot/Comandi/Dadi/' + dado + '.png'  //url immagine dado
+       let messaggio = 'Ho tirato il dado ed è uscito questo numero:' 
        message.reply(messaggio + ' ' + dado, {file: dadoImage});
      }
 
