@@ -36,11 +36,27 @@ client.on('ready', () => {
      }
 
      //parliamo
-     if (comando === prefix + 'parliamo') {
-         //cosa fare
+     if (comando === prefix + 'ripeti') {
+        var i;
+        var messaggio;
+        var prem;
+        for (i = 0; i === arg.length; i++) {
+            if (i === 0) {
+               messaggio = arg[0]
+               prem = arg[0]
+            }
+            else {
+             messaggio = prem + arg[i]
+             prem = messaggio
+            }
+        }
+     message.channel.send(messaggio);
      }
+    } 
+       
+  }
 
-    }
+}
      
 if (message.content.startsWith('Ciao') || message.content.startsWith('ciao')) {
    if (!message.author.bot) {
