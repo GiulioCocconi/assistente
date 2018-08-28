@@ -41,8 +41,6 @@ client.on('ready', () => {
 
     }
      
-   }
-
 if (message.content.startsWith('Ciao')) {
    let frase = Math.floor(Math.random() * 3) + 1; //numero casuale tra 1 e 4
    if (frase === 1) {
